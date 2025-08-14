@@ -1,0 +1,82 @@
+{
+  "common": {
+    "loading": "Memuat...",
+    "close": "Tutup",
+    "next": "Selanjutnya",
+    "previous": "Sebelumnya",
+    "submit": "Kirim",
+    "cancel": "Batal"
+  },
+  "navigation": {
+    "home": "Beranda",
+    "story": "Kisah Kami",
+    "details": "Detail Pernikahan",
+    "gallery": "Galeri",
+    "rsvp": "Konfirmasi Kehadiran",
+    "registry": "Hadiah"
+  },
+  "hero": {
+    "weddingOf": "Pernikahan",
+    "saveTheDate": "Simpan Tanggal",
+    "countdown": "Hari lagi",
+    "scrollDown": "Gulir ke bawah untuk menjelajah"
+  },
+  "story": {
+    "title": "Kisah Cinta Kami",
+    "subtitle": "Bagaimana semuanya dimulai",
+    "timeline": "Perjalanan Kami Bersama"
+  },
+  "details": {
+    "title": "Detail Pernikahan",
+    "ceremony": "Akad Nikah",
+    "reception": "Resepsi",
+    "time": "Waktu",
+    "venue": "Tempat",
+    "address": "Alamat",
+    "dressCode": "Dress Code",
+    "dressCodeText": "Pakaian Formal",
+    "addToCalendar": "Tambah ke Kalender",
+    "getDirections": "Petunjuk Arah"
+  },
+  "gallery": {
+    "title": "Kenangan Kami",
+    "subtitle": "Momen yang kami hargai",
+    "categories": {
+      "all": "Semua",
+      "engagement": "Lamaran",
+      "prewedding": "Pra-nikah",
+      "couple": "Pasangan"
+    }
+  },
+  "rsvp": {
+    "title": "Konfirmasi Kehadiran",
+    "subtitle": "Mohon konfirmasi kehadiran Anda",
+    "name": "Nama Lengkap",
+    "email": "Alamat Email",
+    "phone": "Nomor Telepon",
+    "attendance": "Apakah Anda akan hadir?",
+    "attendanceOptions": {
+      "yes": "Ya, saya akan hadir!",
+      "no": "Maaf, tidak bisa hadir",
+      "maybe": "Belum yakin"
+    },
+    "guestCount": "Jumlah tamu",
+    "dietaryRestrictions": "Pantangan makanan atau alergi",
+    "songRequest": "Permintaan lagu untuk resepsi",
+    "message": "Pesan khusus untuk pengantin",
+    "submitSuccess": "Terima kasih atas konfirmasi Anda!",
+    "submitError": "Maaf, terjadi kesalahan. Silakan coba lagi."
+  },
+  "registry": {
+    "title": "Hadiah Pernikahan",
+    "subtitle": "Kehadiran Anda adalah hadiah terbesar",
+    "description": "Jika Anda ingin memberikan hadiah, kami akan sangat berterima kasih atas kontribusi Anda",
+    "bankDetails": "Detail Transfer Bank",
+    "copyAccount": "Salin Nomor Rekening",
+    "copied": "Disalin ke clipboard!"
+  },
+  "footer": {
+    "thankYou": "Terima kasih telah menjadi bagian dari hari istimewa kami",
+    "madeWithLove": "Dibuat dengan cinta"
+  }
+}

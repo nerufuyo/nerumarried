@@ -1,0 +1,109 @@
+{
+  "couple": {
+    "bride": {
+      "name": "Sarah",
+      "fullName": "Sarah Elizabeth Johnson",
+      "parents": ["Robert Johnson", "Maria Johnson"]
+    },
+    "groom": {
+      "name": "Michael",
+      "fullName": "Michael David Thompson",
+      "parents": ["David Thompson", "Linda Thompson"]
+    }
+  },
+  "wedding": {
+    "date": "2024-12-15",
+    "ceremony": {
+      "time": "09:00",
+      "venue": "St. Mary's Chapel",
+      "address": "123 Wedding Lane, Beautiful City, State 12345",
+      "coordinates": {
+        "lat": 40.7128,
+        "lng": -74.0060
+      }
+    },
+    "reception": {
+      "time": "11:00",
+      "venue": "Grand Ballroom Hotel",
+      "address": "456 Reception Ave, Beautiful City, State 12345",
+      "coordinates": {
+        "lat": 40.7589,
+        "lng": -73.9851
+      }
+    }
+  },
+  "story": {
+    "howWeMet": "We met during our college years at a local coffee shop where we both happened to be studying for the same literature exam. What started as sharing study notes turned into late-night conversations and eventually, a beautiful love story.",
+    "timeline": [
+      {
+        "date": "2020-09-15",
+        "title": "First Meeting",
+        "description": "Met at Central Coffee during literature studies",
+        "image": "/images/timeline/first-meeting.jpg"
+      },
+      {
+        "date": "2020-10-30",
+        "title": "First Date",
+        "description": "Dinner at the Italian restaurant downtown",
+        "image": "/images/timeline/first-date.jpg"
+      },
+      {
+        "date": "2021-02-14",
+        "title": "Became Official",
+        "description": "Valentine's Day - Made it official",
+        "image": "/images/timeline/official.jpg"
+      },
+      {
+        "date": "2023-06-20",
+        "title": "The Proposal",
+        "description": "Engagement at sunset beach where we had our first vacation",
+        "image": "/images/timeline/proposal.jpg"
+      },
+      {
+        "date": "2024-12-15",
+        "title": "Wedding Day",
+        "description": "Our special day - becoming husband and wife",
+        "image": "/images/timeline/wedding.jpg"
+      }
+    ]
+  },
+  "gallery": [
+    {
+      "id": "1",
+      "src": "/images/gallery/engagement-1.jpg",
+      "alt": "Engagement photo at the park",
+      "category": "engagement"
+    },
+    {
+      "id": "2",
+      "src": "/images/gallery/engagement-2.jpg",
+      "alt": "Ring close-up shot",
+      "category": "engagement"
+    },
+    {
+      "id": "3",
+      "src": "/images/gallery/prewedding-1.jpg",
+      "alt": "Pre-wedding shoot at the beach",
+      "category": "prewedding"
+    },
+    {
+      "id": "4",
+      "src": "/images/gallery/couple-1.jpg",
+      "alt": "Casual couple photo",
+      "category": "couple"
+    }
+  ],
+  "registry": [
+    {
+      "id": "1",
+      "title": "Wedding Gift",
+      "description": "Your presence is the greatest gift, but if you wish to honor us with a gift, we would be grateful for your contribution.",
+      "accountDetails": {
+        "bankName": "Bank of America",
+        "accountNumber": "1234567890",
+        "accountName": "Sarah & Michael Wedding"
+      },
+      "qrCode": "/images/qr-codes/wedding-gift.png"
+    }
+  ]
+}

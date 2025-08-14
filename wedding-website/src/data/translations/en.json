@@ -1,0 +1,82 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "close": "Close",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "cancel": "Cancel"
+  },
+  "navigation": {
+    "home": "Home",
+    "story": "Our Story",
+    "details": "Wedding Details",
+    "gallery": "Gallery",
+    "rsvp": "RSVP",
+    "registry": "Gift Registry"
+  },
+  "hero": {
+    "weddingOf": "The Wedding of",
+    "saveTheDate": "Save the Date",
+    "countdown": "Days to go",
+    "scrollDown": "Scroll down to explore"
+  },
+  "story": {
+    "title": "Our Love Story",
+    "subtitle": "How it all began",
+    "timeline": "Our Journey Together"
+  },
+  "details": {
+    "title": "Wedding Details",
+    "ceremony": "Ceremony",
+    "reception": "Reception",
+    "time": "Time",
+    "venue": "Venue",
+    "address": "Address",
+    "dressCode": "Dress Code",
+    "dressCodeText": "Formal Attire",
+    "addToCalendar": "Add to Calendar",
+    "getDirections": "Get Directions"
+  },
+  "gallery": {
+    "title": "Our Memories",
+    "subtitle": "Moments we treasure",
+    "categories": {
+      "all": "All",
+      "engagement": "Engagement",
+      "prewedding": "Pre-wedding",
+      "couple": "Couple"
+    }
+  },
+  "rsvp": {
+    "title": "RSVP",
+    "subtitle": "Please confirm your attendance",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "attendance": "Will you attend?",
+    "attendanceOptions": {
+      "yes": "Yes, I'll be there!",
+      "no": "Sorry, can't make it",
+      "maybe": "Not sure yet"
+    },
+    "guestCount": "Number of guests",
+    "dietaryRestrictions": "Dietary restrictions or allergies",
+    "songRequest": "Song request for the reception",
+    "message": "Special message for the couple",
+    "submitSuccess": "Thank you for your RSVP!",
+    "submitError": "Sorry, there was an error. Please try again."
+  },
+  "registry": {
+    "title": "Gift Registry",
+    "subtitle": "Your presence is our greatest gift",
+    "description": "If you wish to honor us with a gift, we would be grateful for your contribution",
+    "bankDetails": "Bank Transfer Details",
+    "copyAccount": "Copy Account Number",
+    "copied": "Copied to clipboard!"
+  },
+  "footer": {
+    "thankYou": "Thank you for being part of our special day",
+    "madeWithLove": "Made with love"
+  }
+}

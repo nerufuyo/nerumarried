@@ -1,0 +1,152 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer theme {
+  :root {
+    --background: #ffffff;
+    --foreground: #1a1a1a;
+    --gold-primary: #d4af37;
+    --gold-secondary: #b8860b;
+    --gold-light: #ffd700;
+    --gold-cream: #fff8dc;
+    
+    /* Custom colors */
+    --color-gold-50: #fffdf7;
+    --color-gold-100: #fffbeb;
+    --color-gold-200: #fef3c7;
+    --color-gold-300: #fde68a;
+    --color-gold-400: #fbbf24;
+    --color-gold-500: #f59e0b;
+    --color-gold-600: #d97706;
+    --color-gold-700: #b45309;
+    --color-gold-800: #92400e;
+    --color-gold-900: #78350f;
+    
+    /* Wedding specific colors */
+    --color-wedding-gold: var(--gold-primary);
+    --color-wedding-cream: var(--gold-cream);
+    --color-wedding-dark: #1a1a1a;
+    --color-wedding-charcoal: #2d2d2d;
+  }
+}
+
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Custom animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgb(212 175 55 / 0.5);
+    }
+    50% {
+      box-shadow: 0 0 40px rgb(212 175 55 / 0.8);
+    }
+  }
+
+  /* Utility classes */
+  .animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .animate-fadeInDown {
+    animation: fadeInDown 0.6s ease-out;
+  }
+
+  .animate-slideInLeft {
+    animation: slideInLeft 0.6s ease-out;
+  }
+
+  .animate-slideInRight {
+    animation: slideInRight 0.6s ease-out;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  /* Text styles */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #d4af37, #ffd700, #b8860b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .font-script {
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--gold-primary);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--gold-secondary);
+  }
+}
