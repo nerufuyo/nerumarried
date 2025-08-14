@@ -5,53 +5,53 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC)](https://tailwindcss.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.23.12-pink)](https://www.framer.com/motion/)
 
-Undangan pernikahan digital yang elegan dengan tema hitam, putih, dan emas. Dibangun menggunakan teknologi modern untuk pengalaman yang tak terlupakan.
+An elegant digital wedding invitation with black, white, and gold theme. Built using modern technologies for an unforgettable experience.
 
-## ✨ Fitur Utama
+## ✨ Key Features
 
-### 🎯 Fitur Inti
-- **📱 Responsive Design** - Optimal di semua perangkat
-- **🎨 Animasi Canggih** - 15+ komponen animasi interaktif
-- **🌍 Multi-bahasa** - 8 bahasa (Indonesia, English, 日本語, 한국어, 中文, Español, Français, العربية)
-- **♿ Aksesibilitas** - WCAG 2.1 AA compliant
-- **⚡ Performa Tinggi** - 182KB First Load JS
+### 🎯 Core Features
+- **📱 Responsive Design** - Optimized for all devices
+- **🎨 Advanced Animations** - 15+ interactive animation components
+- **🌍 Multi-language** - 8 languages (Indonesia, English, 日本語, 한국어, 中文, Español, Français, العربية)
+- **♿ Accessibility** - WCAG 2.1 AA compliant
+- **⚡ High Performance** - 182KB First Load JS
 
-### 🎭 Animasi & Interaksi
-- **ParticleField** - Partikel emas yang mengambang
-- **ImageReveal** - Efek reveal gambar yang sophisticated
-- **Magnetic** - Interaksi yang mengikuti mouse
-- **TextReveal** - Animasi teks bertahap
-- **TouchGestures** - Swipe, pinch, pull untuk mobile
-- **ScrollAnimations** - 7 jenis animasi scroll
+### 🎭 Animations & Interactions
+- **ParticleField** - Floating golden particles
+- **ImageReveal** - Sophisticated image reveal effects
+- **Magnetic** - Mouse-following interactions
+- **TextReveal** - Progressive text animations
+- **TouchGestures** - Swipe, pinch, pull for mobile
+- **ScrollAnimations** - 7 types of scroll animations
 
-### 🌐 Dukungan Multi-bahasa
-- **Auto-detection** - Deteksi bahasa browser otomatis
-- **RTL Support** - Dukungan bahasa Arab
-- **Cultural Adaptation** - Penyesuaian tipografi dan format
-- **Persistent Selection** - Pilihan bahasa tersimpan
+### 🌐 Multi-language Support
+- **Auto-detection** - Automatic browser language detection
+- **RTL Support** - Arabic language support
+- **Cultural Adaptation** - Typography and format adjustments
+- **Persistent Selection** - Language choice saved
 
-## 🛠️ Teknologi
+## 🛠️ Technology Stack
 
 ### Frontend Stack
-- **Next.js 15.4.6** - React framework dengan Turbopack
-- **TypeScript** - Type safety dan developer experience
+- **Next.js 15.4.6** - React framework with Turbopack
+- **TypeScript** - Type safety and developer experience
 - **Tailwind CSS v4** - Utility-first CSS framework
-- **Framer Motion 12.23.12** - Animasi dan transisi
+- **Framer Motion 12.23.12** - Animations and transitions
 
-### Optimisasi & Performance
-- **PWA Ready** - Web App Manifest dan offline support
-- **SEO Optimized** - Structured data dan meta tags
-- **Core Web Vitals** - Monitoring performa real-time
+### Optimization & Performance
+- **PWA Ready** - Web App Manifest and offline support
+- **SEO Optimized** - Structured data and meta tags
+- **Core Web Vitals** - Real-time performance monitoring
 - **Lazy Loading** - Intersection Observer optimizations
-- **Font Optimization** - Next.js font loading dengan display swap
+- **Font Optimization** - Next.js font loading with display swap
 
-## 🚀 Memulai
+## 🚀 Getting Started
 
-### Prasyarat
-- Node.js 18.17 atau lebih baru
-- npm atau yarn atau pnpm
+### Prerequisites
+- Node.js 18.17 or later
+- npm or yarn or pnpm
 
-### Instalasi
+### Installation
 ```bash
 # Clone repository
 git clone https://github.com/nerufuyo/nerumarried.git
@@ -60,37 +60,37 @@ cd nerumarried
 # Install dependencies
 npm install
 
-# Jalankan development server
+# Run development server
 npm run dev
 ```
 
-Buka [http://localhost:3000](http://localhost:3000) untuk melihat hasilnya.
+Open [http://localhost:3000](http://localhost:3000) to view the result.
 
-### Scripts yang Tersedia
+### Available Scripts
 ```bash
-npm run dev          # Development server dengan Turbopack
+npm run dev          # Development server with Turbopack
 npm run build        # Production build
 npm run start        # Production server
 npm run lint         # ESLint check
 ```
 
-## 📁 Struktur Project
+## 📁 Project Structure
 
 ```
 src/
 ├── app/                    # Next.js App Router
-│   ├── globals.css        # Global styles dan theme
-│   ├── layout.tsx         # Root layout dengan metadata
+│   ├── globals.css        # Global styles and theme
+│   ├── layout.tsx         # Root layout with metadata
 │   └── page.tsx           # Homepage
 ├── components/
-│   ├── animations/        # 15+ komponen animasi
+│   ├── animations/        # 15+ animation components
 │   │   ├── ParticleField.tsx
 │   │   ├── ImageReveal.tsx
 │   │   ├── Magnetic.tsx
 │   │   ├── TextReveal.tsx
 │   │   ├── TouchGestures.tsx
 │   │   └── ScrollAnimations/
-│   ├── sections/          # Section utama website
+│   ├── sections/          # Main website sections
 │   │   ├── HeroSection.tsx
 │   │   ├── StorySection.tsx
 │   │   ├── WeddingDetailsSection.tsx
@@ -104,7 +104,7 @@ src/
 │   └── optimization/     # Mobile & performance optimizations
 │       └── MobileOptimization.tsx
 ├── data/
-│   ├── translations/     # File terjemahan 8 bahasa
+│   ├── translations/     # Translation files for 8 languages
 │   │   ├── en.json
 │   │   ├── id.json
 │   │   ├── ja.json
@@ -113,7 +113,7 @@ src/
 │   │   ├── es.json
 │   │   ├── fr.json
 │   │   └── ar.json
-│   └── wedding.json      # Data pernikahan
+│   └── wedding.json      # Wedding data
 ├── hooks/               # Custom React hooks
 │   └── useTranslation.ts
 ├── types/               # TypeScript type definitions
@@ -150,24 +150,24 @@ src/
 - **First Load JS**: 182KB (optimized)
 - **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices, SEO)
 - **Core Web Vitals**: Excellent ratings
-- **Bundle Size**: Tree-shaking dan code splitting optimized
+- **Bundle Size**: Tree-shaking and code splitting optimized
 
-## ♿ Aksesibilitas
+## ♿ Accessibility
 
 - **WCAG 2.1 AA** compliant
-- **Screen Reader** support dengan ARIA labels
-- **Keyboard Navigation** lengkap
+- **Screen Reader** support with ARIA labels
+- **Keyboard Navigation** complete
 - **Color Contrast** validation
-- **Focus Management** yang proper
+- **Focus Management** properly implemented
 - **Mobile Touch Targets** 44px minimum
 
 ## 🌍 Internationalization
 
-Mendukung 8 bahasa dengan fitur:
-- Auto-detection bahasa browser
-- RTL support untuk bahasa Arab
-- Format tanggal dan angka sesuai locale
-- Tipografi yang disesuaikan per bahasa
+Supports 8 languages with features:
+- Auto-detection of browser language
+- RTL support for Arabic
+- Date and number formatting per locale
+- Typography adjusted per language
 - Persistent language selection
 
 ## 🚀 Deployment
@@ -177,7 +177,7 @@ Mendukung 8 bahasa dengan fitur:
 npm run build
 ```
 
-Deploy ke Vercel dengan satu klik atau connect ke GitHub repository.
+Deploy to Vercel with one click or connect to GitHub repository.
 
 ### Manual Deployment
 ```bash
@@ -187,38 +187,38 @@ npm run start
 
 ## 📝 Customization
 
-### Mengubah Data Pernikahan
-Edit file `src/data/wedding.json`:
+### Changing Wedding Data
+Edit the `src/data/wedding.json` file:
 
 ```json
 {
   "couple": {
     "bride": {
-      "name": "Nama Pengantin Wanita",
-      "fullName": "Nama Lengkap",
-      "parents": ["Ayah", "Ibu"]
+      "name": "Bride Name",
+      "fullName": "Full Name",
+      "parents": ["Father", "Mother"]
     },
     "groom": {
-      "name": "Nama Pengantin Pria",
-      "fullName": "Nama Lengkap", 
-      "parents": ["Ayah", "Ibu"]
+      "name": "Groom Name",
+      "fullName": "Full Name", 
+      "parents": ["Father", "Mother"]
     }
   },
   "wedding": {
     "date": "2024-12-15",
     "ceremony": {
       "time": "09:00",
-      "venue": "Nama Venue",
-      "address": "Alamat Lengkap"
+      "venue": "Venue Name",
+      "address": "Full Address"
     }
   }
 }
 ```
 
-### Menambah Bahasa Baru
-1. Buat file terjemahan di `src/data/translations/[lang].json`
-2. Tambahkan bahasa ke `src/types/index.ts`
-3. Update `LanguageUtils.ts` untuk deteksi bahasa
+### Adding New Language
+1. Create translation file in `src/data/translations/[lang].json`
+2. Add language to `src/types/index.ts`
+3. Update `LanguageUtils.ts` for language detection
 
 ## 🤝 Contributing
 
@@ -234,16 +234,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 💖 Acknowledgments
 
-- **Next.js Team** - Framework yang luar biasa
-- **Tailwind CSS** - Utility-first CSS yang powerful
-- **Framer Motion** - Library animasi terbaik untuk React
-- **Vercel** - Platform deployment yang seamless
+- **Next.js Team** - Amazing framework
+- **Tailwind CSS** - Powerful utility-first CSS
+- **Framer Motion** - Best animation library for React
+- **Vercel** - Seamless deployment platform
 
 ---
 
 <div align="center">
 
-**💒 Dibuat dengan ❤️ untuk hari yang spesial**
+**💒 Built with ❤️ for a special day**
 
 [![Made with Next.js](https://img.shields.io/badge/Made%20with-Next.js-black)](https://nextjs.org/)
 [![Powered by Vercel](https://img.shields.io/badge/Powered%20by-Vercel-black)](https://vercel.com/)
