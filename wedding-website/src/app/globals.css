@@ -31,12 +31,49 @@
 }
 
 @layer base {
+  * {
+    /* Enable hardware acceleration for smoother animations */
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
   body {
     background: var(--background);
     color: var(--foreground);
     font-family: 'Inter', system-ui, sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
+    /* Optimize scroll performance */
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: none;
+    /* Prevent text selection on UI elements */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    /* Performance optimizations */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    /* Prevent horizontal scroll */
+    overflow-x: hidden;
+  }
+  
+  /* Allow text selection on content areas */
+  p, span, div[contenteditable], input, textarea {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text;
+  }
+  
+  /* Optimize images */
+  img {
+    /* Faster image loading */
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 1000px;
   }
 }
 

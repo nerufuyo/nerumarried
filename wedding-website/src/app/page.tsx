@@ -6,21 +6,27 @@ import { RSVPSection } from '@/components/sections/RSVPSection';
 import { GiftRegistrySection } from '@/components/sections/GiftRegistrySection';
 import { ScrollProgress, PageTransition } from '@/components/animations';
 import { FloatingLanguageSwitcher } from '@/components/ui/LanguageSwitcher';
+import { MobileOptimization, OfflineFallback } from '@/components/optimization/MobileOptimization';
+import { PerformanceMonitorComponent } from '@/components/monitoring/PerformanceMonitor';
 
 export default function HomePage() {
   return (
-    <ScrollProgress>
-      <PageTransition>
-        <main className="min-h-screen">
-          <HeroSection />
-          <StorySection />
-          <WeddingDetailsSection />
-          <GallerySection />
-          <RSVPSection />
-          <GiftRegistrySection />
-        </main>
-        <FloatingLanguageSwitcher />
-      </PageTransition>
-    </ScrollProgress>
+    <MobileOptimization>
+      <ScrollProgress>
+        <PageTransition>
+          <main className="min-h-screen">
+            <HeroSection />
+            <StorySection />
+            <WeddingDetailsSection />
+            <GallerySection />
+            <RSVPSection />
+            <GiftRegistrySection />
+          </main>
+          <FloatingLanguageSwitcher />
+          <OfflineFallback />
+          <PerformanceMonitorComponent />
+        </PageTransition>
+      </ScrollProgress>
+    </MobileOptimization>
   );
 }
