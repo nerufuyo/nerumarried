@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from '@/hooks/useTranslation';
 import { ScrollAnimation } from '@/components/animations/ScrollAnimation';
 import { HoverAnimation } from '@/components/animations/HoverAnimation';
-import { Button } from '@/components/ui/Button';
+import { TextReveal, ImageReveal, MagneticButton, ParticleField } from '@/components/animations';
 import { 
   Camera, 
   X, 
@@ -53,8 +53,17 @@ export function GallerySection() {
   };
 
   return (
-    <section id="gallery" className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="gallery" className="py-20 bg-gray-50 relative overflow-hidden">
+      {/* Background particle effect */}
+      <ParticleField 
+        count={10} 
+        color="rgba(255, 215, 0, 0.2)" 
+        size="md" 
+        speed="normal" 
+        className="opacity-50"
+      />
+      
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <ScrollAnimation>
           <div className="text-center mb-16">
@@ -65,12 +74,19 @@ export function GallerySection() {
             >
               <Camera className="w-8 h-8 text-white" />
             </motion.div>
-            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-gray-900 mb-4">
+            <TextReveal 
+              variant="words"
+              className="text-4xl sm:text-5xl font-serif font-bold text-gray-900 mb-4"
+            >
               {t('gallery.title')}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            </TextReveal>
+            <TextReveal 
+              variant="words"
+              delay={0.5}
+              className="text-xl text-gray-600 max-w-2xl mx-auto"
+            >
               {t('gallery.subtitle')}
-            </p>
+            </TextReveal>
           </div>
         </ScrollAnimation>
 
@@ -78,15 +94,16 @@ export function GallerySection() {
         <ScrollAnimation direction="up" delay={0.2}>
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             {categories.map((category) => (
-              <Button
+              <MagneticButton
                 key={category}
                 variant={selectedCategory === category ? 'primary' : 'ghost'}
-                size="sm"
                 onClick={() => setSelectedCategory(category)}
                 className="capitalize"
+                magnetStrength={0.3}
+                glowOnHover={selectedCategory === category}
               >
                 {t(`gallery.categories.${category}`)}
-              </Button>
+              </MagneticButton>
             ))}
           </div>
         </ScrollAnimation>
@@ -106,37 +123,43 @@ export function GallerySection() {
                 exit={{ opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.5 }}
               >
-                <HoverAnimation scale={1.03}>
-                  <div
-                    className="relative aspect-square bg-gray-200 rounded-lg overflow-hidden cursor-pointer group"
-                    onClick={() => openLightbox(image, index)}
-                  >
-                    {/* Placeholder for actual image */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300 flex items-center justify-center">
-                      <div className="text-center">
-                        <Camera className="w-12 h-12 text-yellow-600 mx-auto mb-2" />
-                        <p className="text-yellow-800 font-medium">{image.alt}</p>
-                        <p className="text-yellow-700 text-sm capitalize mt-1">{image.category}</p>
-                      </div>
-                    </div>
-
-                    {/* Hover Overlay */}
-                    <motion.div
-                      className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center"
-                      initial={{ opacity: 0 }}
-                      whileHover={{ opacity: 1 }}
+                <ImageReveal 
+                  direction="center" 
+                  delay={index * 0.1}
+                  duration={0.8}
+                >
+                  <HoverAnimation scale={1.03}>
+                    <div
+                      className="relative aspect-square bg-gray-200 rounded-lg overflow-hidden cursor-pointer group"
+                      onClick={() => openLightbox(image, index)}
                     >
+                      {/* Placeholder for actual image */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300 flex items-center justify-center">
+                        <div className="text-center">
+                          <Camera className="w-12 h-12 text-yellow-600 mx-auto mb-2" />
+                          <p className="text-yellow-800 font-medium">{image.alt}</p>
+                          <p className="text-yellow-700 text-sm capitalize mt-1">{image.category}</p>
+                        </div>
+                      </div>
+
+                      {/* Hover Overlay */}
                       <motion.div
-                        className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                        initial={{ scale: 0.8 }}
-                        whileHover={{ scale: 1 }}
+                        className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center"
+                        initial={{ opacity: 0 }}
+                        whileHover={{ opacity: 1 }}
                       >
-                        <Heart className="w-8 h-8 mx-auto mb-2" />
-                        <p className="text-sm">View Photo</p>
+                        <motion.div
+                          className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                          initial={{ scale: 0.8 }}
+                          whileHover={{ scale: 1 }}
+                        >
+                          <Heart className="w-8 h-8 mx-auto mb-2" />
+                          <p className="text-sm">View Photo</p>
+                        </motion.div>
                       </motion.div>
-                    </motion.div>
-                  </div>
-                </HoverAnimation>
+                    </div>
+                  </HoverAnimation>
+                </ImageReveal>
               </motion.div>
             ))}
           </AnimatePresence>

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from '@/hooks/useTranslation';
 import { ScrollAnimation } from '@/components/animations/ScrollAnimation';
 import { StaggerAnimation } from '@/components/animations/StaggerAnimation';
+import { TextReveal, ParticleField, ImageReveal } from '@/components/animations';
 import { Card } from '@/components/ui/Card';
 import { DateUtils } from '@/utils/date.utils';
 import { Heart, Calendar } from 'lucide-react';
@@ -13,8 +14,16 @@ export function StorySection() {
   const { t } = useTranslation();
 
   return (
-    <section id="story" className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="story" className="py-20 bg-gray-50 relative overflow-hidden">
+      {/* Background particle effect */}
+      <ParticleField 
+        count={15} 
+        color="rgba(255, 215, 0, 0.3)" 
+        size="sm" 
+        speed="slow" 
+      />
+      
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <ScrollAnimation>
           <div className="text-center mb-16">
@@ -25,35 +34,54 @@ export function StorySection() {
             >
               <Heart className="w-8 h-8 text-white" />
             </motion.div>
-            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-gray-900 mb-4">
+            <TextReveal 
+              variant="words" 
+              className="text-4xl sm:text-5xl font-serif font-bold text-gray-900 mb-4"
+            >
               {t('story.title')}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            </TextReveal>
+            <TextReveal 
+              variant="words" 
+              delay={0.5}
+              className="text-xl text-gray-600 max-w-2xl mx-auto"
+            >
               {t('story.subtitle')}
-            </p>
+            </TextReveal>
           </div>
         </ScrollAnimation>
 
         {/* How We Met Story */}
         <ScrollAnimation direction="up" delay={0.2}>
-          <Card variant="elegant" className="mb-16 max-w-4xl mx-auto">
-            <div className="text-center">
-              <h3 className="text-2xl font-serif font-semibold text-gray-900 mb-6">
-                How We Met
-              </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                {weddingData.story.howWeMet}
-              </p>
-            </div>
-          </Card>
+          <ImageReveal direction="center" duration={1.2}>
+            <Card variant="luxury" className="mb-16 max-w-4xl mx-auto" glow>
+              <div className="text-center">
+                <TextReveal 
+                  variant="words"
+                  className="text-2xl font-serif font-semibold text-gray-900 mb-6"
+                >
+                  How We Met
+                </TextReveal>
+                <TextReveal 
+                  variant="words" 
+                  delay={0.8}
+                  className="text-lg text-gray-700 leading-relaxed"
+                >
+                  {weddingData.story.howWeMet}
+                </TextReveal>
+              </div>
+            </Card>
+          </ImageReveal>
         </ScrollAnimation>
 
         {/* Timeline */}
         <ScrollAnimation direction="up" delay={0.4}>
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-serif font-bold text-gray-900 mb-4">
+            <TextReveal 
+              variant="words"
+              className="text-3xl font-serif font-bold text-gray-900 mb-4"
+            >
               {t('story.timeline')}
-            </h3>
+            </TextReveal>
           </div>
         </ScrollAnimation>
 
@@ -73,33 +101,44 @@ export function StorySection() {
               >
                 {/* Timeline Content */}
                 <div className="w-full lg:w-5/12 mb-6 lg:mb-0">
-                  <Card
-                    variant="elegant"
-                    className={`${
-                      index % 2 === 0 ? 'lg:mr-8' : 'lg:ml-8'
-                    } hover:shadow-xl transition-all duration-300`}
-                  >
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center">
-                          <Calendar className="w-6 h-6 text-white" />
+                  <ImageReveal direction={index % 2 === 0 ? 'left' : 'right'} delay={index * 0.2}>
+                    <Card
+                      variant="luxury"
+                      hover={true}
+                      className={`${
+                        index % 2 === 0 ? 'lg:mr-8' : 'lg:ml-8'
+                      } hover:shadow-xl transition-all duration-300`}
+                    >
+                      <div className="flex items-start space-x-4">
+                        <div className="flex-shrink-0">
+                          <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center">
+                            <Calendar className="w-6 h-6 text-white" />
+                          </div>
+                        </div>
+                        <div className="flex-1">
+                          <div className="flex items-center justify-between mb-2">
+                            <TextReveal 
+                              variant="words"
+                              delay={index * 0.1}
+                              className="text-xl font-serif font-semibold text-gray-900"
+                            >
+                              {event.title}
+                            </TextReveal>
+                            <span className="text-sm text-yellow-600 font-medium">
+                              {DateUtils.formatDate(event.date, 'MMM yyyy')}
+                            </span>
+                          </div>
+                          <TextReveal 
+                            variant="words"
+                            delay={index * 0.2}
+                            className="text-gray-600 leading-relaxed"
+                          >
+                            {event.description}
+                          </TextReveal>
                         </div>
                       </div>
-                      <div className="flex-1">
-                        <div className="flex items-center justify-between mb-2">
-                          <h4 className="text-xl font-serif font-semibold text-gray-900">
-                            {event.title}
-                          </h4>
-                          <span className="text-sm text-yellow-600 font-medium">
-                            {DateUtils.formatDate(event.date, 'MMM yyyy')}
-                          </span>
-                        </div>
-                        <p className="text-gray-600 leading-relaxed">
-                          {event.description}
-                        </p>
-                      </div>
-                    </div>
-                  </Card>
+                    </Card>
+                  </ImageReveal>
                 </div>
 
                 {/* Timeline Point */}
