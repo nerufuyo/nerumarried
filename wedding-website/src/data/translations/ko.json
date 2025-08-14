@@ -1,0 +1,70 @@
+{
+  "common": {
+    "loading": "로딩 중...",
+    "close": "닫기",
+    "next": "다음",
+    "previous": "이전",
+    "submit": "제출",
+    "cancel": "취소"
+  },
+  "navigation": {
+    "home": "홈",
+    "story": "우리 이야기",
+    "details": "결혼식 정보",
+    "gallery": "포토 갤러리",
+    "rsvp": "참석 확인",
+    "registry": "선물 목록"
+  },
+  "hero": {
+    "weddingOf": "결혼식",
+    "saveTheDate": "날짜를 기억해 주세요",
+    "countdown": "남은 일수",
+    "scrollDown": "아래로 스크롤하여 자세히 보기"
+  },
+  "story": {
+    "title": "우리의 사랑 이야기",
+    "subtitle": "모든 것의 시작",
+    "timeline": "우리의 여정"
+  },
+  "details": {
+    "title": "결혼식 정보",
+    "ceremony": "예식",
+    "reception": "피로연",
+    "time": "시간",
+    "venue": "장소",
+    "address": "주소",
+    "dressCode": "드레스 코드",
+    "addToCalendar": "캘린더에 추가",
+    "getDirections": "길찾기"
+  },
+  "gallery": {
+    "title": "포토 갤러리",
+    "subtitle": "우리의 특별한 순간들",
+    "categories": {
+      "all": "전체",
+      "engagement": "약혼",
+      "prewedding": "웨딩 촬영",
+      "couple": "커플"
+    }
+  },
+  "rsvp": {
+    "title": "참석 확인",
+    "subtitle": "참석 여부를 알려주세요",
+    "form": {
+      "name": "이름",
+      "email": "이메일",
+      "attendance": "참석 여부",
+      "attending": "참석",
+      "notAttending": "불참석",
+      "guests": "게스트 수",
+      "dietaryRestrictions": "식이 제한",
+      "message": "메시지",
+      "submit": "제출"
+    }
+  },
+  "registry": {
+    "title": "선물 목록",
+    "subtitle": "축하해 주셔서 감사합니다",
+    "message": "여러분의 참석이 저희에게는 가장 큰 선물이지만, 축하의 마음을 담아 선물을 준비하고 싶으시다면 아래 목록을 참고해 주세요."
+  }
+}

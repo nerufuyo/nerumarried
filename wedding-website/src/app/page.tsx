@@ -5,6 +5,7 @@ import { GallerySection } from '@/components/sections/GallerySection';
 import { RSVPSection } from '@/components/sections/RSVPSection';
 import { GiftRegistrySection } from '@/components/sections/GiftRegistrySection';
 import { ScrollProgress, PageTransition } from '@/components/animations';
+import { FloatingLanguageSwitcher } from '@/components/ui/LanguageSwitcher';
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
           <RSVPSection />
           <GiftRegistrySection />
         </main>
+        <FloatingLanguageSwitcher />
       </PageTransition>
     </ScrollProgress>
   );

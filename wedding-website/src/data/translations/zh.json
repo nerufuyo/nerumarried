@@ -1,0 +1,70 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "close": "关闭",
+    "next": "下一个",
+    "previous": "上一个",
+    "submit": "提交",
+    "cancel": "取消"
+  },
+  "navigation": {
+    "home": "首页",
+    "story": "我们的故事",
+    "details": "婚礼详情",
+    "gallery": "照片库",
+    "rsvp": "回复邀请",
+    "registry": "礼品清单"
+  },
+  "hero": {
+    "weddingOf": "婚礼",
+    "saveTheDate": "请记住这个日期",
+    "countdown": "倒计时",
+    "scrollDown": "向下滚动查看更多"
+  },
+  "story": {
+    "title": "我们的爱情故事",
+    "subtitle": "一切的开始",
+    "timeline": "我们的旅程"
+  },
+  "details": {
+    "title": "婚礼详情",
+    "ceremony": "仪式",
+    "reception": "婚宴",
+    "time": "时间",
+    "venue": "地点",
+    "address": "地址",
+    "dressCode": "着装要求",
+    "addToCalendar": "添加到日历",
+    "getDirections": "获取路线"
+  },
+  "gallery": {
+    "title": "照片库",
+    "subtitle": "我们的特别时刻",
+    "categories": {
+      "all": "全部",
+      "engagement": "订婚",
+      "prewedding": "婚纱照",
+      "couple": "情侣"
+    }
+  },
+  "rsvp": {
+    "title": "回复邀请",
+    "subtitle": "请告诉我们您的出席情况",
+    "form": {
+      "name": "姓名",
+      "email": "电子邮箱",
+      "attendance": "出席情况",
+      "attending": "出席",
+      "notAttending": "不出席",
+      "guests": "客人数量",
+      "dietaryRestrictions": "饮食限制",
+      "message": "留言",
+      "submit": "提交"
+    }
+  },
+  "registry": {
+    "title": "礼品清单",
+    "subtitle": "感谢您的祝福",
+    "message": "您的出席对我们来说就是最好的礼物，但如果您想要送礼物表达祝福，请参考下面的清单。"
+  }
+}

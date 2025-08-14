@@ -1,0 +1,70 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "close": "Cerrar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "cancel": "Cancelar"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "story": "Nuestra Historia",
+    "details": "Detalles de la Boda",
+    "gallery": "Galería",
+    "rsvp": "Confirmación",
+    "registry": "Lista de Regalos"
+  },
+  "hero": {
+    "weddingOf": "La Boda de",
+    "saveTheDate": "Guarden la Fecha",
+    "countdown": "Días restantes",
+    "scrollDown": "Desplázate hacia abajo para explorar"
+  },
+  "story": {
+    "title": "Nuestra Historia de Amor",
+    "subtitle": "Cómo comenzó todo",
+    "timeline": "Nuestro Viaje Juntos"
+  },
+  "details": {
+    "title": "Detalles de la Boda",
+    "ceremony": "Ceremonia",
+    "reception": "Recepción",
+    "time": "Hora",
+    "venue": "Lugar",
+    "address": "Dirección",
+    "dressCode": "Código de Vestimenta",
+    "addToCalendar": "Añadir al Calendario",
+    "getDirections": "Obtener Direcciones"
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Nuestros momentos especiales",
+    "categories": {
+      "all": "Todas",
+      "engagement": "Compromiso",
+      "prewedding": "Pre-boda",
+      "couple": "Pareja"
+    }
+  },
+  "rsvp": {
+    "title": "Confirmación",
+    "subtitle": "Por favor confirma tu asistencia",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "attendance": "Asistencia",
+      "attending": "Asistiré",
+      "notAttending": "No asistiré",
+      "guests": "Número de Invitados",
+      "dietaryRestrictions": "Restricciones Alimentarias",
+      "message": "Mensaje",
+      "submit": "Enviar"
+    }
+  },
+  "registry": {
+    "title": "Lista de Regalos",
+    "subtitle": "Gracias por celebrar con nosotros",
+    "message": "Su presencia es el mejor regalo para nosotros, pero si desean obsequiarnos algo, pueden consultar la siguiente lista."
+  }
+}

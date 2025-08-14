@@ -1,0 +1,70 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "close": "Fermer",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "submit": "Envoyer",
+    "cancel": "Annuler"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "story": "Notre Histoire",
+    "details": "Détails du Mariage",
+    "gallery": "Galerie",
+    "rsvp": "Confirmation",
+    "registry": "Liste de Cadeaux"
+  },
+  "hero": {
+    "weddingOf": "Le Mariage de",
+    "saveTheDate": "Réservez la Date",
+    "countdown": "Jours restants",
+    "scrollDown": "Faites défiler vers le bas pour explorer"
+  },
+  "story": {
+    "title": "Notre Histoire d'Amour",
+    "subtitle": "Comment tout a commencé",
+    "timeline": "Notre Voyage Ensemble"
+  },
+  "details": {
+    "title": "Détails du Mariage",
+    "ceremony": "Cérémonie",
+    "reception": "Réception",
+    "time": "Heure",
+    "venue": "Lieu",
+    "address": "Adresse",
+    "dressCode": "Code Vestimentaire",
+    "addToCalendar": "Ajouter au Calendrier",
+    "getDirections": "Obtenir l'Itinéraire"
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Nos moments spéciaux",
+    "categories": {
+      "all": "Toutes",
+      "engagement": "Fiançailles",
+      "prewedding": "Pré-mariage",
+      "couple": "Couple"
+    }
+  },
+  "rsvp": {
+    "title": "Confirmation",
+    "subtitle": "Veuillez confirmer votre présence",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "attendance": "Présence",
+      "attending": "Je serai présent(e)",
+      "notAttending": "Je ne serai pas présent(e)",
+      "guests": "Nombre d'Invités",
+      "dietaryRestrictions": "Restrictions Alimentaires",
+      "message": "Message",
+      "submit": "Envoyer"
+    }
+  },
+  "registry": {
+    "title": "Liste de Cadeaux",
+    "subtitle": "Merci de célébrer avec nous",
+    "message": "Votre présence est le plus beau cadeau pour nous, mais si vous souhaitez nous offrir quelque chose, vous pouvez consulter la liste suivante."
+  }
+}

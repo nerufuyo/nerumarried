@@ -1,0 +1,70 @@
+{
+  "common": {
+    "loading": "読み込み中...",
+    "close": "閉じる",
+    "next": "次へ",
+    "previous": "前へ",
+    "submit": "送信",
+    "cancel": "キャンセル"
+  },
+  "navigation": {
+    "home": "ホーム",
+    "story": "私たちの物語",
+    "details": "結婚式の詳細",
+    "gallery": "フォトギャラリー",
+    "rsvp": "出席確認",
+    "registry": "ギフトリスト"
+  },
+  "hero": {
+    "weddingOf": "結婚式",
+    "saveTheDate": "日程をお控えください",
+    "countdown": "あと",
+    "scrollDown": "下にスクロールして詳細をご覧ください"
+  },
+  "story": {
+    "title": "私たちのラブストーリー",
+    "subtitle": "すべての始まり",
+    "timeline": "私たちの歩み"
+  },
+  "details": {
+    "title": "結婚式の詳細",
+    "ceremony": "挙式",
+    "reception": "披露宴",
+    "time": "時間",
+    "venue": "会場",
+    "address": "住所",
+    "dressCode": "ドレスコード",
+    "addToCalendar": "カレンダーに追加",
+    "getDirections": "道順を取得"
+  },
+  "gallery": {
+    "title": "フォトギャラリー",
+    "subtitle": "私たちの特別な瞬間",
+    "categories": {
+      "all": "すべて",
+      "engagement": "婚約",
+      "prewedding": "前撮り",
+      "couple": "カップル"
+    }
+  },
+  "rsvp": {
+    "title": "出席確認",
+    "subtitle": "あなたの出席をお知らせください",
+    "form": {
+      "name": "お名前",
+      "email": "メールアドレス",
+      "attendance": "出席について",
+      "attending": "出席",
+      "notAttending": "欠席",
+      "guests": "ゲスト数",
+      "dietaryRestrictions": "食事制限",
+      "message": "メッセージ",
+      "submit": "送信"
+    }
+  },
+  "registry": {
+    "title": "ギフトリスト",
+    "subtitle": "私たちへのお祝いをありがとうございます",
+    "message": "あなたの存在が私たちにとって最高の贈り物ですが、お祝いをお考えの方は以下のリストをご参照ください。"
+  }
+}

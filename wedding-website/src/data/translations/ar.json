@@ -1,0 +1,70 @@
+{
+  "common": {
+    "loading": "جاري التحميل...",
+    "close": "إغلاق",
+    "next": "التالي",
+    "previous": "السابق",
+    "submit": "إرسال",
+    "cancel": "إلغاء"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "story": "قصتنا",
+    "details": "تفاصيل الزفاف",
+    "gallery": "معرض الصور",
+    "rsvp": "تأكيد الحضور",
+    "registry": "قائمة الهدايا"
+  },
+  "hero": {
+    "weddingOf": "زفاف",
+    "saveTheDate": "احتفظوا بالتاريخ",
+    "countdown": "الأيام المتبقية",
+    "scrollDown": "اسحب لأسفل للاستكشاف"
+  },
+  "story": {
+    "title": "قصة حبنا",
+    "subtitle": "كيف بدأ كل شيء",
+    "timeline": "رحلتنا معاً"
+  },
+  "details": {
+    "title": "تفاصيل الزفاف",
+    "ceremony": "الاحتفال",
+    "reception": "الاستقبال",
+    "time": "الوقت",
+    "venue": "المكان",
+    "address": "العنوان",
+    "dressCode": "قواعد اللباس",
+    "addToCalendar": "إضافة للتقويم",
+    "getDirections": "الحصول على الاتجاهات"
+  },
+  "gallery": {
+    "title": "معرض الصور",
+    "subtitle": "لحظاتنا الخاصة",
+    "categories": {
+      "all": "الكل",
+      "engagement": "الخطوبة",
+      "prewedding": "ما قبل الزفاف",
+      "couple": "الزوجان"
+    }
+  },
+  "rsvp": {
+    "title": "تأكيد الحضور",
+    "subtitle": "يرجى تأكيد حضوركم",
+    "form": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "attendance": "الحضور",
+      "attending": "سأحضر",
+      "notAttending": "لن أحضر",
+      "guests": "عدد الضيوف",
+      "dietaryRestrictions": "القيود الغذائية",
+      "message": "رسالة",
+      "submit": "إرسال"
+    }
+  },
+  "registry": {
+    "title": "قائمة الهدايا",
+    "subtitle": "شكراً لاحتفالكم معنا",
+    "message": "حضوركم هو أفضل هدية بالنسبة لنا، ولكن إذا كنتم ترغبون في إهدائنا شيئاً، يمكنكم الاطلاع على القائمة التالية."
+  }
+}
