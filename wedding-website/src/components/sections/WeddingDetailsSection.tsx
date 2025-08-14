@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from '@/hooks/useTranslation';
 import { ScrollAnimation } from '@/components/animations/ScrollAnimation';
 import { HoverAnimation } from '@/components/animations/HoverAnimation';
+import { TextReveal, ScrollScale, ParallaxLayer } from '@/components/animations';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { DateUtils } from '@/utils/date.utils';
@@ -55,24 +56,41 @@ export function WeddingDetailsSection() {
   ];
 
   return (
-    <section id="details" className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="details" className="py-20 bg-white relative overflow-hidden">
+      {/* Background decorative elements */}
+      <ParallaxLayer speed={0.3} direction="up" className="absolute top-10 left-10 opacity-10">
+        <Calendar className="w-32 h-32 text-yellow-400" />
+      </ParallaxLayer>
+      <ParallaxLayer speed={0.2} direction="down" className="absolute bottom-10 right-10 opacity-10">
+        <Clock className="w-24 h-24 text-yellow-400" />
+      </ParallaxLayer>
+      
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <ScrollAnimation>
           <div className="text-center mb-16">
-            <motion.div
-              className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full mb-6"
-              whileHover={{ scale: 1.1, rotate: 360 }}
-              transition={{ duration: 0.5 }}
+            <ScrollScale scale={[0.8, 1.1]}>
+              <motion.div
+                className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full mb-6"
+                whileHover={{ scale: 1.1, rotate: 360 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Calendar className="w-8 h-8 text-white" />
+              </motion.div>
+            </ScrollScale>
+            <TextReveal 
+              variant="words"
+              className="text-4xl sm:text-5xl font-serif font-bold text-gray-900 mb-4"
             >
-              <Calendar className="w-8 h-8 text-white" />
-            </motion.div>
-            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-gray-900 mb-4">
               {t('details.title')}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            </TextReveal>
+            <TextReveal 
+              variant="words"
+              delay={0.5}
+              className="text-xl text-gray-600 max-w-2xl mx-auto"
+            >
               Mark your calendars and join us for our special celebration
-            </p>
+            </TextReveal>
           </div>
         </ScrollAnimation>
 

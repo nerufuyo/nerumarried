@@ -11,3 +11,13 @@ export { ParticleField } from './ParticleField';
 export { ImageReveal } from './ImageReveal';
 export { Magnetic, MagneticButton } from './Magnetic';
 export { TextReveal, GradientTextReveal } from './TextReveal';
+export { SwipeGesture, PinchZoom, PullToRefresh } from './TouchGestures';
+export { 
+  ScrollProgress, 
+  ScrollScale, 
+  ScrollRotate, 
+  ParallaxLayer, 
+  ScrollTextReveal,
+  ScrollMorph,
+  Scroll3DCard 
+} from './ScrollAnimations';

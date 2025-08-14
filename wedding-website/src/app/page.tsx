@@ -1,20 +1,24 @@
-import { Layout } from '@/components/layout/Layout';
 import { HeroSection } from '@/components/sections/HeroSection';
 import { StorySection } from '@/components/sections/StorySection';
 import { WeddingDetailsSection } from '@/components/sections/WeddingDetailsSection';
 import { GallerySection } from '@/components/sections/GallerySection';
 import { RSVPSection } from '@/components/sections/RSVPSection';
 import { GiftRegistrySection } from '@/components/sections/GiftRegistrySection';
+import { ScrollProgress, PageTransition } from '@/components/animations';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <Layout>
-      <HeroSection />
-      <StorySection />
-      <WeddingDetailsSection />
-      <GallerySection />
-      <RSVPSection />
-      <GiftRegistrySection />
-    </Layout>
+    <ScrollProgress>
+      <PageTransition>
+        <main className="min-h-screen">
+          <HeroSection />
+          <StorySection />
+          <WeddingDetailsSection />
+          <GallerySection />
+          <RSVPSection />
+          <GiftRegistrySection />
+        </main>
+      </PageTransition>
+    </ScrollProgress>
   );
 }
