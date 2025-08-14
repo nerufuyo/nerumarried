@@ -45,7 +45,7 @@ export function useTranslation() {
 
   const t = (key: string): string => {
     const keys = key.split('.');
-    let result: any = translations;
+    let result: string | Translation = translations;
 
     for (const k of keys) {
       if (result && typeof result === 'object' && k in result) {

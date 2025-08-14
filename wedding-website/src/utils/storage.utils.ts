@@ -1,5 +1,5 @@
 export class StorageUtils {
-  static setItem(key: string, value: any): void {
+  static setItem(key: string, value: unknown): void {
     try {
       if (typeof window !== 'undefined') {
         localStorage.setItem(key, JSON.stringify(value));

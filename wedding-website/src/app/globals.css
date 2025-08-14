@@ -125,11 +125,11 @@
   }
 
   .font-script {
-    font-family: 'Dancing Script', cursive;
+    font-family: var(--font-dancing), cursive;
   }
 
   .font-serif {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-playfair), serif;
   }
 
   /* Custom scrollbar */
